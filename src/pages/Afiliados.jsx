@@ -690,20 +690,7 @@ export default function Afiliados() {
               <option value="individual">Individual</option>
             </select>
           </div>
-          <div className="form-group">
-            <label className="form-label">País de origen</label>
-            <select className="form-select" value={filterPais} onChange={e => setFilterPais(e.target.value)}>
-              <option value="todos">Todos los países</option>
-              {paisesDisponibles.map(p => <option key={p} value={p}>{p}</option>)}
-            </select>
-          </div>
-          <div className="form-group">
-            <label className="form-label">Año de alta</label>
-            <select className="form-select" value={filterAnio} onChange={e => setFilterAnio(e.target.value)}>
-              <option value="todos">Todos los años</option>
-              {aniosDisponibles.map(y => <option key={y} value={y}>{y}</option>)}
-            </select>
-          </div>
+
           <div style={{display:'flex',alignItems:'flex-end'}}>
             {filtrosActivos > 0 && (
               <button className="btn" style={{width:'100%',justifyContent:'center',color:'var(--accent)',borderColor:'var(--accent)'}} onClick={limpiarFiltros}>
