@@ -309,7 +309,7 @@ export default function Cuotas() {
       <div className="toolbar">
         <div className="toolbar-left">
           <select className="form-select" style={{width:'auto'}} value={filterAnio} onChange={e => setAnio(e.target.value)}>
-            {[ANIO_ACTUAL, ANIO_ACTUAL - 1, ANIO_ACTUAL - 2].map(y => <option key={y} value={y}>{y}</option>)}
+            {[ANIO_ACTUAL, ANIO_ACTUAL - 1, ANIO_ACTUAL - 2, ANIO_ACTUAL - 3].map(y => <option key={y} value={y}>{y}</option>)}
           </select>
         </div>
         <div style={{display:'flex',gap:'8px'}}>
