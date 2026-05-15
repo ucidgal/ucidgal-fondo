@@ -417,7 +417,7 @@ export default function Cuotas() {
                 <div className="form-group">
                   <label className="form-label">Año</label>
                   <select className="form-select" value={form.anio} onChange={e => updateForm('anio', e.target.value)}>
-                    {[ANIO_ACTUAL, ANIO_ACTUAL - 1].map(y => <option key={y}>{y}</option>)}
+                    {[ANIO_ACTUAL, ANIO_ACTUAL - 1, ANIO_ACTUAL - 2, ANIO_ACTUAL - 3].map(y => <option key={y}>{y}</option>)}
                   </select>
                 </div>
                 <div className="form-group">
